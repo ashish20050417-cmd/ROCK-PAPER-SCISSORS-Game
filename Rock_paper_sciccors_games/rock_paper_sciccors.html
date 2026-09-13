@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Rock Paper Scissors</title>
+
+    <link
+        rel="stylesheet"
+        href="rock_paper_sciccors.css"
+    >
+</head>
+
+
+<body>
+
+    <main class="game">
+
+
+
+        <header class="header">
+
+            <div>
+                <p class="small-title">
+                    QUICK GAME
+                </p>
+
+                <h1>
+                    ROCK
+                    <span>PAPER</span>
+                    SCISSORS
+                </h1>
+            </div>
+
+
+            <div class="status">
+                <span></span>
+                ONLINE
+            </div>
+
+        </header>
+
+
+
+
+        <div class="intro">
+
+            <p>
+                Choose your move and challenge the computer.
+            </p>
+
+        </div>
+
+
+       
+
+        <section class="game-section">
+
+            <div class="section-label">
+                <span>01</span>
+                CHOOSE YOUR WEAPON
+            </div>
+
+
+            <div class="choices">
+
+
+          
+
+                <button
+                    class="choice"
+                    id="rock"
+                    type="button"
+                >
+
+                    <div class="choice-number">
+                        01
+                    </div>
+
+                    <div class="image-box">
+
+                        <img
+                            src="./images/rock.png"
+                            alt="Rock"
+                        >
+
+                    </div>
+
+                    <div class="choice-name">
+                        ROCK
+                    </div>
+
+                </button>
+
+
+         
+
+                <button
+                    class="choice"
+                    id="paper"
+                    type="button"
+                >
+
+                    <div class="choice-number">
+                        02
+                    </div>
+
+                    <div class="image-box">
+
+                        <img
+                            src="./images/paper.png"
+                            alt="Paper"
+                        >
+
+                    </div>
+
+                    <div class="choice-name">
+                        PAPER
+                    </div>
+
+                </button>
+
+
+              
+
+                <button
+                    class="choice"
+                    id="scissors"
+                    type="button"
+                >
+
+                    <div class="choice-number">
+                        03
+                    </div>
+
+                    <div class="image-box">
+
+                        <img
+                            src="./images/scissors.png"
+                            alt="Scissors"
+                        >
+
+                    </div>
+
+                    <div class="choice-name">
+                        SCISSORS
+                    </div>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+     
+
+        <section class="score-board">
+
+            <div class="score-card user">
+
+                <p class="score-label">
+                    YOU
+                </p>
+
+                <p
+                    id="user-score"
+                    class="score"
+                >
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="vs">
+                VS
+            </div>
+
+
+            <div class="score-card computer">
+
+                <p class="score-label">
+                    COMPUTER
+                </p>
+
+                <p
+                    id="computer-score"
+                    class="score"
+                >
+                    0
+                </p>
+
+            </div>
+
+        </section>
+
+
+      
+        <section class="message-container">
+
+            <div class="message-header">
+
+                <span>
+                    ROUND STATUS
+                </span>
+
+                <span id="round">
+                    READY
+                </span>
+
+            </div>
+
+
+            <div
+                id="msg"
+                class="message"
+            >
+                Choose your move to start.
+            </div>
+
+        </section>
+
+
+        
+
+        <button
+            id="reset"
+            class="reset-button"
+            type="button"
+        >
+            ↻ RESET GAME
+        </button>
+
+
+     
+
+        <footer class="footer">
+
+            <span>
+                ROCK / PAPER / SCISSORS
+            </span>
+
+            <span>
+                R = ROCK
+                &nbsp; P = PAPER
+                &nbsp; S = SCISSORS
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="rock_paper_sciccors.js"></script>
+
+</body>
+</html>
