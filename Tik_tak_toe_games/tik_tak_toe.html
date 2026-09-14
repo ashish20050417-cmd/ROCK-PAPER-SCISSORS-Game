@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A modern Tic Tac Toe game"
+    >
+
+    <title>Tic Tac Toe — Game</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="tik_tak_toe.css"
+    >
+</head>
+
+
+<body>
+
+    <!-- Background -->
+
+    <div class="background">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="grid"></div>
+    </div>
+
+
+    <!-- Winner Overlay -->
+
+    <div
+        class="message-container hidden"
+        id="message-container"
+    >
+
+        <div class="winner-card">
+
+            <div class="winner-icon">
+                ✦
+            </div>
+
+            <p class="winner-small">
+                GAME OVER
+            </p>
+
+            <h2 id="msg">
+                Winner
+            </h2>
+
+            <p class="winner-subtitle">
+                Congratulations! Great move.
+            </p>
+
+            <button
+                id="new-button"
+                type="button"
+            >
+                NEW GAME
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main -->
+
+    <main class="game-container">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    TT
+                </div>
+
+                <div>
+                    <p class="eyebrow">
+                        MINI ARENA
+                    </p>
+
+                    <h1>
+                        TIC
+                        <span>TAC</span>
+                        TOE
+                    </h1>
+                </div>
+
+            </div>
+
+
+            <div class="status">
+
+                <span></span>
+
+                LIVE
+
+            </div>
+
+        </header>
+
+
+        <!-- Intro -->
+
+        <section class="intro">
+
+            <p>
+                Make your move. Three in a row wins the game.
+            </p>
+
+        </section>
+
+
+        <!-- Turn -->
+
+        <div class="turn-bar">
+
+            <span>
+                CURRENT TURN
+            </span>
+
+            <strong id="turn-display">
+                O
+            </strong>
+
+        </div>
+
+
+        <!-- Board -->
+
+        <section class="board-wrapper">
+
+            <div class="game-board">
+
+                <button
+                    class="box"
+                    type="button"
+                ></button>
+
+                <button
+                    class="box"
+                    type="button"
+                ></button>
+
+                <button
+                    class="box"
+                    type="button"
+                ></button>
+
+                <button
+                    class="box"
+                    type="button"
+                ></button>
+
+                <button
+                    class="box"
+                    type="button"
+                ></button>
+
+                <button
+                    class="box"
+                    type="button"
+                ></button>
+
+                <button
+                    class="box"
+                    type="button"
+                ></button>
+
+                <button
+                    class="box"
+                    type="button"
+                ></button>
+
+                <button
+                    class="box"
+                    type="button"
+                ></button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Player Info -->
+
+        <section class="players">
+
+            <div class="player-card player-o">
+
+                <div class="player-symbol">
+                    O
+                </div>
+
+                <div>
+
+                    <p>
+                        PLAYER 1
+                    </p>
+
+                    <strong>
+                        O
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="versus">
+                VS
+            </div>
+
+
+            <div class="player-card player-x">
+
+                <div class="player-symbol">
+                    X
+                </div>
+
+                <div>
+
+                    <p>
+                        PLAYER 2
+                    </p>
+
+                    <strong>
+                        X
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Reset -->
+
+        <button
+            id="reset-button"
+            type="button"
+        >
+            ↻ &nbsp; RESET GAME
+        </button>
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+
+            <span>
+                TIC TAC TOE
+            </span>
+
+            <span>
+                FIRST TO THREE
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="tik_tak_toe.js"></script>
+
+</body>
+
+</html>
